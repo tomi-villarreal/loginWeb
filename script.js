@@ -13,7 +13,7 @@ function validatePassoword(text){
 button.addEventListener("click", ()=>{
     const textoInput = document.getElementById("input");
     if(validatePassoword(textoInput.value)){
-        // message.classList.toggle("message-color");
+        textoInput.value = "";
         message.style.cssText = "display: flex";
     }else{
         textoInput.value = "";
